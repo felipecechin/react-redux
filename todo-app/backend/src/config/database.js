@@ -3,7 +3,8 @@ mongoose.Promise = global.Promise
 
 module.exports = mongoose.connect('BANCO MONGO', {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false
 }).then(function () {
     console.log('ok')
 });
