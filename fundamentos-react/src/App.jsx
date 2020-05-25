@@ -11,14 +11,27 @@ import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
 
 export default _ => (
     <div className={"App"}>
         <h1>Fundamentos React </h1>
 
         <div className={'Cards'}>
+            <Card titulo={'#10 - Comunicação indireta'}>
+                <IndiretaPai/>
+            </Card>
+
+            <Card titulo={'#09 - Comunicação direta'}>
+                <DiretaPai/>
+            </Card>
+
             <Card titulo={'#08 - Renderização condicional'}>
                 <ParOuImpar numero={21}/>
+                <UsuarioInfo usuario={{nome: 'Fernando'}}/>
+                <UsuarioInfo usuario={{email: 'ficeh@gomai.com'}}/>
             </Card>
 
             <Card titulo={'#07 - Desafio'}>
@@ -31,9 +44,9 @@ export default _ => (
 
             <Card titulo={'#05 - Componente com filhos'}>
                 <Familia sobrenome={'AAA'}>
-                    <FamiliaMembro nome={'Pedro'} />
-                    <FamiliaMembro nome={'Felipe'} />
-                    <FamiliaMembro nome={'Alan'} />
+                    <FamiliaMembro nome={'Pedro'}/>
+                    <FamiliaMembro nome={'Felipe'}/>
+                    <FamiliaMembro nome={'Alan'}/>
                 </Familia>
             </Card>
 
