@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import IndiretaFilho from "./IndiretaFilho";
 
 export default props => {
+    //eslint-disable-next-line
     const [a, b] = [1,2]
     const [nome, setNome] = useState('?')
     const [idade, setIdade] = useState(0)
