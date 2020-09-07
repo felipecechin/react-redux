@@ -1,7 +1,7 @@
 //const Pessoa = require('./pessoa')
 
 import Pessoa from "./pessoa";
-import './assets/css/estilo.css'
+import './assets'
 
 //sistema de módulos ecmascript
 //usa export e import
